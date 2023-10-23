@@ -364,7 +364,7 @@
                         <page string="Other Information" name="purchase_delivery_invoice">
                             <group>
                                 <group name="other_info">
-                                    <field name="user_id" domain="[('share', '=', False)]" widget="many2one_avatar_user"/>
+                                    <field name="user_id" invisible='1'  domain="[('share', '=', False)]" widget="many2one_avatar_user"/>
                                     <field name="company_id" groups="base.group_multi_company" options="{'no_create': True}"/>
                                 </group>
                                 <group name="invoice_info">
