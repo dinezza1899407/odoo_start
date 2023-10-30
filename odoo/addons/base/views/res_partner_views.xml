@@ -25,7 +25,7 @@
                         </group>
                     </sheet>
                 </form>
-            </field>
+            </field>    
         </record>
 
         <record id="action_partner_title_contact" model="ir.actions.act_window">

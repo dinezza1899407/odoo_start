@@ -679,14 +679,14 @@
                                     <div name="commitment_date_div" class="o_row">
                                         <field name="commitment_date"/>
                                         <span name="expected_date_span" class="text-muted">Expected: <field name="expected_date" widget="date"/></span>
-                                    </div>
+                                    </div>  
                                 </group>
                                 <group string="Reporting" name="sale_reporting" groups="base.group_no_one">
                                     <group name="technical" colspan="2" class="mb-0">
-                                        <field name="origin"/>
+                                        <field name="origin" />
                                     </group>
                                     <group name="utm_link" colspan="2" class="mt-0">
-                                        <field name="campaign_id"/>
+                                        <field name="campaign_id" />
                                         <field name="medium_id"/>
                                         <field name="source_id"/>
                                     </group>

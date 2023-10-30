@@ -89,7 +89,7 @@
         sequence="5"
         groups="base.group_no_one"/>
 
-    <!-- utm.source -->
+    <!-- utm.source-->
     <record id="utm_source_view_tree" model="ir.ui.view">
         <field name="name">utm.source.view.tree</field>
         <field name="model">utm.source</field>
@@ -129,6 +129,6 @@
         action="utm_source_action"
         parent="marketing_utm"
         sequence="10"
-        groups="base.group_no_one"/>
+        groups="base.group_no_one"/>  
 
 </odoo>
