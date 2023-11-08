@@ -654,6 +654,7 @@
                                 </group>
                                 <div class="oe_clear"/>
                             </group>
+                     
                         </page>
                         <page string="Other Info" name="other_information">
                             <group>
@@ -693,6 +694,7 @@
                                 </group>
                             </group>
                         </page>
+                
                         <page groups="base.group_no_one" string="Customer Signature" name="customer_signature" attrs="{'invisible': [('require_signature', '=', False), ('signed_by', '=', False), ('signature', '=', False), ('signed_on', '=', False)]}">
                             <group>
                                 <field name="signed_by"/>
