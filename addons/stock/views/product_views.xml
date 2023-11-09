@@ -123,10 +123,12 @@
                            attrs="{'invisible': [('type', '=', 'consu')]}">
                         <field name="tracking" widget="radio" attrs="{'invisible': [('type', 'in', ['service', 'digital'])]}"/>
                     </group>
-                     <group string="Counterpart Locations" name="stock_property" groups="base.group_no_one">
-                        <field name="property_stock_production"/>
-                        <field name="property_stock_inventory"/>
+<!--
+                    <group string="Counterpart Locations" name="stock_property" groups="base.group_no_one">
+                        <field name="property_stock_production" />
+                        <field name="property_stock_inventory" />
                     </group>
+-->                    
                 </xpath>
                 <page name="inventory" position="inside">
                     <group string="Description for Delivery Orders">
