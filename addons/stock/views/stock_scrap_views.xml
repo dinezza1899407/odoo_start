@@ -16,10 +16,9 @@
                         <filter string="Location" name="location" domain="[]" context="{'group_by':'location_id'}"/>
                         <filter string="Scrap Location" name="scrap_location" domain="[]" context="{'group_by':'scrap_location_id'}"/>
                     </group>
-                </search>
+                </search>   
             </field>
         </record>
-
         <record id="stock_scrap_form_view" model="ir.ui.view">
             <field name="name">stock.scrap.form</field>
             <field name="model">stock.scrap</field>
@@ -44,6 +43,7 @@
                             <h1><field name="name" nolabel="1"/></h1>
                         </div>
                         <group>
+
                             <group>
                                 <field name="product_id" context="{'default_type': 'product'}"/>
                                 <label for="scrap_qty"/>
@@ -52,7 +52,7 @@
                                     <field name="product_uom_category_id" invisible="1"/>
                                     <field name="product_uom_id" groups="uom.group_uom" force_save="1"/>
                                 </div>
-                            </group>
+                            </group>   
                             <group>
                                 <field name="lot_id" attrs="{'invisible': ['|',('product_id', '=', False),('tracking', '=', 'none')], 'required': [('tracking', '!=', 'none')]}" groups="stock.group_production_lot"/>
                                 <field name="tracking" invisible="1"/>
@@ -184,7 +184,6 @@
                 </form>
             </field>
         </record>
-
     <menuitem
         id="menu_stock_scrap"
         name="Scrap"
